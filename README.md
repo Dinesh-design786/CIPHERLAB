@@ -14,6 +14,10 @@
 
 **CipherLab // Zero** is a full-stack cryptographic workstation and demonstration platform for digital signatures using the classic **ElGamal Signature Scheme** over standardized finite field parameters (**RFC 3526 MODP Group 14** 2048-bit safe prime, $g = 2$, SHA-256).
 
+<p align="center">
+  <img src="docs/images/hero-telemetry.png" alt="CipherLab // Zero Dashboard & Live Telemetry" width="100%">
+</p>
+
 Built with a high-contrast cybersecurity terminal interface (Matrix Green `#00ff88` & Laser Crimson `#ff2a55`), CipherLab bridges theoretical discrete logarithm mathematics and practical software engineering. It provides an interactive **Tamper Detection Lab**, step-by-step **Algorithm Visualizer**, enterprise-style **Key Vault** (with AES-256-GCM + scrypt encrypted storage, rotation, and revocation), an append-only **Audit Ledger**, and a real-time **Benchmark & Performance Suite**.
 
 > **Academic & Experimental Scope:**  
@@ -47,6 +51,10 @@ CIPHERLAB // ZERO
 ---
 
 ## Mathematical Specification & Core Equations
+
+<p align="center">
+  <img src="docs/images/cryptographic-engine-specs.png" alt="Cryptographic Engine & Limits Specifications" width="100%">
+</p>
 
 ### 1. Finite Field Parameters
 CipherLab enforces fixed, cryptographically robust public parameters derived from **RFC 3526 MODP Group 14**:
@@ -120,6 +128,11 @@ $$g^{x \cdot r + k \cdot s} \equiv g^h \pmod p \quad \blacksquare$$
 ## Detailed Feature Modules
 
 ### 1. Dual Workstation (Sign & Verify Terminal)
+
+<p align="center">
+  <img src="docs/images/sign-verify-workstation.png" alt="Sign & Verify Terminal Workstation" width="100%">
+</p>
+
 - **Document Signing:**
   - Select document through drag-and-drop file uploader (supports up to 25 MiB).
   - Select an active keypair from the Key Vault.
@@ -162,6 +175,11 @@ Designed for computer science lectures, presentations, and cryptographic audits:
 ---
 
 ### 4. Cryptographic Key Vault
+
+<p align="center">
+  <img src="docs/images/key-vault-keyring.png" alt="Cryptographic Key Vault & Lifecycle Keyring" width="100%">
+</p>
+
 - **Zero-Plaintext Storage:** Private exponents are encrypted at rest using `AES-256-GCM` with 96-bit random nonces and 256-bit keys derived with `scrypt` ($N=2^{15}, r=8, p=1$).
 - **Lifecycle Tracking:** Visual indicators for `ACTIVE`, `REVOKED`, and `RETIRED` keys.
 - **Key Rotation Workflow:** Retires an existing key and establishes a new 2048-bit keypair in a single atomic transaction.
