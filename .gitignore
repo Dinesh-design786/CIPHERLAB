@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+backend/data/
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+.pnpm-store/
+powershell.cmd
+.env

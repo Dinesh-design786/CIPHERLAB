@@ -1,0 +1,12 @@
+{
+  "format": "elgamal-signature-package",
+  "version": "1.0",
+  "scheme": "ElGamal-DSS",
+  "hash": "SHA-256",
+  "filename": "example.txt",
+  "document_sha256": "<64 lowercase hex characters>",
+  "public_key": { "p": "<hex>", "g": "2", "y": "<hex>" },
+  "signature": { "r": "<hex>", "s": "<hex>" },
+  "public_key_fingerprint": "<64 lowercase hex characters>",
+  "created_at": "2026-01-01T00:00:00+00:00"
+}
